@@ -113,7 +113,7 @@ frame2 = Frame(window)
 
 
 # entry
-password_entry = Entry(frame3, font=("Courrier",15),width=21)
+password_entry = Entry(frame3, font=("Courrier",15),width=19)
 password_entry.place(x=0,y=0)
 password_entry.grid(row=0, column=0, sticky=W)
 # password verify
@@ -122,7 +122,7 @@ label3 = Label(window, text="", bg="black", fg="green")
 label3.pack()
 
 # button
-button2 = Button(frame2,text="Dé/chiffrer",bg="black",fg="green",font=("Courrier",15),command=lambda: encrypt_password(password_entry.get()))
+button2 = Button(frame2,text="Chiffrer",bg="black",fg="green",font=("Courrier",15),command=lambda: encrypt_password(password_entry.get()))
 button2.grid(row=0, column=1, sticky=W)
 
 button3 = Button(frame2,text="Clear",bg="black",fg="green",font=("Courrier",15),command=clear)
